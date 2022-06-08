@@ -41,6 +41,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "react-pdf": "^5.7.2",
+    "sass": "^1.52.2"
   }
 }
