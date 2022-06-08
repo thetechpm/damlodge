@@ -15,7 +15,6 @@ const options = {
 
 function App() {
   const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
@@ -37,7 +36,7 @@ function App() {
         
         <p className="lead text-center mt-5">The Dam Lodge overlooks Riffe Lake and the Mossyrock Dam. In about five minutes you can reach the idyllic Swofford Pond, a popular fishing location for the area, and in a little over ten minutes, you can reach the Mossyrock Park, a lakeside park with 152 campsites & seasonal boat launch, swimming, general store, & concessions.</p>
         
-        <h2 id="menu">Menu</h2>
+        <h2 className="mt-5" id="menu">Menu</h2>
         <Container>
           <Document file="./Dam Lodge Menu.pdf" onLoadSuccess={onDocumentLoadSuccess} options={{
             standardFontDataUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/standard_fonts`,
