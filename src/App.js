@@ -1,51 +1,28 @@
 // Bootstrap components
-import {  Carousel, Col, Container} from 'react-bootstrap';
+import {  Container} from 'react-bootstrap';
 
-// Libraries
-import { Document, Page, pdfjs } from 'react-pdf';
-import { useState } from 'react';
-
+// Custom components
+import Header from './components/Header';
+import Menu from './components/Menu';
+import Photos from './components/Photos';
 
 // Stylesheet
 import './App.scss';
 
-const options = {
-  standardFontDataUrl: 'standard_fonts/',
-};
-
 function App() {
-  const [numPages, setNumPages] = useState(null);
-
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
 
   const currentYear = new Date().getFullYear();
 
   return (
     <div className="App">
-      <header>
-        <Col xs={12} className='header-container'>
-          <div className='background-image' style={{backgroundImage: `url(${"./images/view-landscape-long.jpg"})`}} />
-          <div className='header-body-container'>
-            <h1>The Dam Lodge</h1>
-          </div>
-        </Col>
-      </header>
+      <Header></Header>
       <Container>
+        <p className="lead text-center mt-5">The Dam Lodge overlooks Riffe Lake and the Mossyrock Dam. In about five minutes you can reach the idyllic Swofford Pond, a popular fishing location for the area, and in a little over ten minutes, you can reach the Mossyrock Park, a lakeside park with 152 campsites & seasonal boat launch and swimming point.</p>
         
-        <p className="lead text-center mt-5">The Dam Lodge overlooks Riffe Lake and the Mossyrock Dam. In about five minutes you can reach the idyllic Swofford Pond, a popular fishing location for the area, and in a little over ten minutes, you can reach the Mossyrock Park, a lakeside park with 152 campsites & seasonal boat launch, swimming, general store, & concessions.</p>
-        
-        <h2 className="mt-5" id="menu">Menu</h2>
-        <Container>
-          <Document file="./Dam Lodge Menu.pdf" onLoadSuccess={onDocumentLoadSuccess} options={{
-            standardFontDataUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/standard_fonts`,
-          }}>
-            <Page pageNumber={1} />
-            <Page pageNumber={2} />
-            <Page pageNumber={3} />
-          </Document>
-        </Container>
+        <Photos></Photos>
+
+        <Menu></Menu>
+
       </Container>
       <footer>
         <Container className="my-3 text-center">

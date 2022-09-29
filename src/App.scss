@@ -57,6 +57,33 @@
   margin-top: 20px;
 }
 
+.carousel-image {
+  height: 50vh;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.carousel-caption-container {
+  width: 100%;
+  padding: 1rem;
+  border: 0px solid black;
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+
+  p {
+    font-size: 16px;
+    color: white;
+  }
+
+  h3 {
+    font-family: 'Homemade Apple', cursive;
+  }
+}
+
 .react-pdf__Document {
   display: flex;
   flex-direction: column;
