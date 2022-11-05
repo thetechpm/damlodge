@@ -44,9 +44,7 @@ function Photos() {
                 <Carousel.Caption>
                     <div className='carousel-caption-container'>
                         <h3>Beach park nearby!</h3>
-                        <p>
-                            Visit a family-friendly park with water access to Riffe Lake (formed by Mossyrock Dam) for swimming or boating
-                        </p>
+                        <p>Visit a family-friendly park with water access to Riffe Lake (formed by Mossyrock Dam) for swimming or boating</p>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -60,9 +58,7 @@ function Photos() {
                 <Carousel.Caption>
                     <div className='carousel-caption-container'>
                         <h3>See the wildlife!</h3>
-                        <p>
-                            Deer are our most frequent visitors, but you may see a bobcat or bear
-                        </p>
+                        <p>Deer are our most frequent visitors, but you may see a bobcat or bear</p>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -76,9 +72,7 @@ function Photos() {
                 <Carousel.Caption>
                     <div className='carousel-caption-container'>
                         <h3>Park your RV!</h3>
-                        <p>
-                            A convenient RV parking spot is located just to left of the house
-                        </p>
+                        <p>A convenient RV parking spot is located just to the left of the house</p>
                     </div>
                 </Carousel.Caption>
             </Carousel.Item>
